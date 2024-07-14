@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="side-nave" class="side-nave position-fixed vh-100 d-flex">
+      <div class="list d-flex flex-column justify-content-between">
+        <div class="tags py-3">
+          <ul class="the-list overflow-hidden">
+            <li id="searchList" class="all-list py-2 position-relative">Search</li>
+            <li id="categoreyList" class="all-list py-2 position-relative">Categories</li>
+            <li id="areaList" class="all-list py-2 position-relative">Area</li>
+            <li id="ingreadList" class="all-list py-2 position-relative">Ingredients</li>
+            <li id="contactList" class="all-list py-2 position-relative">Contact Us</li>
+          </ul>
+        </div>
+        <div class="icons p-3">
+          <div class="social">
+            <i class="fa fa-brands fa-facebook-f"></i>
+            <i class="fa fa-brands fa-square-x-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+            <p>
+              Copyright Â© 2019 All Rights
+              <br />
+              Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="part2 d-flex flex-column text-center p-2 justify-content-between"
+      >
+        <div class="logo">
+          <img src="logo.png" alt="" />
+        </div>
+        <div class="close-btn">
+          <i id="change" class="fa-solid fa-bars fa-2x"></i>
+        </div>
+        <div class="media">
+          <div><i class="fa-solid fa-globe"></i></div>
+          <div><i class="fa-solid fa-share-nodes"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container defulte  p-5">
+      <div class="row gy-5" id="cards"></div>
+    </div>
+    <section id="searchInputs" class="searh-inputs d-none">
+      <div class="container py-4 ">
+        <div class="row saerch">
+          <div class="col-md-6">
+            <div class="input-group mb-3">
+              <input id="searchName" type="text" placeholder="search by name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group mb-3">
+              <input id="searchLatter" type="text" placeholder="search by first later" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+          </div>
+            </div>
+            <div id="the-cards" class="row gy-4">
+              
+            </div>
+          </div>
+      </div>
+    </section>
+      
+    <section id="cate" class="category  p-2 d-none"><div class="container">
+        <div id="categorey" class="row gy-4">
+          
+        </div>
+      </div>
+    </section>
+    <section id="area"class='d-none vh-100 p-2' >
+      <div class="container" class="m-auto">
+        <div id="countries" class="row gy-3">
+        </div>
+      </div>
+    </section>
+    <section id="ingreadiant" class="d-none">
+      <div class="container">
+        <div id="ingread" class="row">
+          
+        </div>
+      </div>
+    </section>
+    <section id="contactUs" class="d-none" >
+      <div class="container">
+        <div class="row py-5 g-4 vh-100" >
+          <div class="container w-75 text-center d-flex justify-content-center align-items-center">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="input-group mb-3 contact-inputs">
+                <input id="nameInput" type="text" class="form-control " placeholder="Enter your name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <p id="massega-name" class="alert alert-danger w-100 d-none">Special characters and numbers not allowed</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-group mb-3 contact-inputs">
+                <input id="emailInput" type="text" class="form-control" placeholder="Enter your Email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <p class="alert alert-danger d-none"></p>
+  
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-group mb-3 contact-inputs">
+                <input id="phoneInput" type="text" class="form-control" placeholder="Enter your phone" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <p class="alert alert-danger"></p>
+  
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-group mb-3 contact-inputs">
+                <input id="ageInput" type="text" class="form-control" placeholder="Enter your age" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <p class="alert alert-danger"></p>
+  
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-group mb-3 contact-inputs">
+                <input id="passInput" type="password" class="form-control " placeholder="Enter your password" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <p class="alert alert-danger"></p>
+  
+              </div>
+          </div>
+            <div class="col-md-6">
+              <div class="input-group mb-3 contact-inputs">
+                <input id="repassInput" type="password" class="form-control" placeholder="Enter your password" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <p class="alert alert-danger"></p>
+  
+              </div>
+          </div>
+          <div class="text-center">
+            <button id="btn-submit" class="btn btn-outline-danger px-2 mt-2">submit</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mealsins" class="d-none p-2 vh-100"><div class="container">
+      <div id="meals" class="row gy-4">
+        
+      </div>
+    </div>
+  </section>
+    <section id="food-count" class="d-none p-2 vh-100"><div class="container">
+      <div id="foodd" class="row gy-4">
+        
+      </div>
+    </div>
+  </section>
+    <section id="ingread-pic" class="d-none p-2 vh-100"><div class="container">
+      <div id="picIngred" class="row gy-4">
+        
+      </div>
+    </div>
+  </section>
+  <section id="description"class='d-none'>
+<div class="container">
+  <div id="descrip" class="row ">
+
+  </div>
+  </div>
+</div>
+  </section>
+  <div id="spiner" class="container-fluid spiner d-flex justify-content-center align-items-center">
+    <div  class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
+  
+    <script src="jquery-3.7.1.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
